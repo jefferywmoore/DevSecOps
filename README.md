@@ -7,7 +7,7 @@ DevOps outlines a software development process and an organizational culture shi
 DevSecOps automatically bakes in security at every phase of the software development lifecycle, enabling development of secure software at the speed of Agile and DevOps. Addressing security issues as they emerge reduces cost (by catching problems before they are pushed into production), as well as the overall risk and attack surface) [IBM learn devsecops](https://www.ibm.com/cloud/learn/devsecops).
 
 
-Articles/Publications:
+## Articles/Publications:
 
 DOD: [DevSecOps Playbook](https://dodcio.defense.gov/Portals/0/Documents/Library/DevSecOps%20Playbook_DoD-CIO_20211019.pdf)
 Highlights:
@@ -33,17 +33,74 @@ Highlights:
     - Infrastructure automation support via IaC.
     - Design for failure.
     - Evolutionary design support.
-  - 
-  - 
+  - Adopt a Capability Model, not a Maturity Model
+    - | Metric | High Performers | Med. Performers | Low Performers|
+      | ---------- | :---------- | :---------- | :----------: |
+      | Deployment Freq. | On-Demand | >1xweek<1xmnth | >1xweek<1xmnth |
+      | Change lead time | < 1 hour | >1xweek<1xmnth | >1xweek<1xmnth | 
+      | MTTR | < 1 hour | < 1 day | >1xweek<1xmnth |
+      | Change failure rate | 0-15% | 0-15% | 31-45% |
+  - Drive Continuous Improvement through Key Capabilities
+    - Continuous Delivery
+      - use source code repos for all product artifacts
+      - use trunkbased development methods
+      - shift-left on security
+      - implement test automation
+      - implement continuous intgration
+      - support test data management
+      - implement continuous delivery
+      - automate deployment 
+    - Architecture
+      - use loosley coupled architecture
+      - architect for empowered teams 
+    - Cultural
+      - adopt a Likert scale survey to measure cultural change
+      - encourage and support continuous learning initiatives
+      - support and facilitate collaberation among and between teams
+      - provide resources and tools that make work meaningful
+      - support or embody transformational leadership 
+    - Product & Process
+      - gather and implement customer feedback
+      - make the flow of work visible through the value stream
+      - work in small batches
+      - foster and enable team experimentation 
+    - Lean Management & Monitoring
+      - have a lightweight change approval process
+      - monitor across application and infrastructure to inform business decisions
+      - check system health proactively
+      - improve processes and manage work with work-in-process (WIP) limits
+      - visualize work to monitor quality and communicate throughout the team
+  - Establish a Software Factory
+    - Design
+    - Instantiate
+    - Verify
+    - Operate & Monitor
+  - Define a Meaningful DevSecOps Pipeline
+    -  every DevSecOps pipeline is a collection of process workflows and scripts running on a set of DevSecOps tools operating in unison with their associated software factory. The design of each pipeline must clearly identify the process flows and automation activities across the various DevSecOps stages:
+      - plan
+      - develop
+      - build
+      - test
+      - release & deliver
+      - deploy
+      - operate
+  - Adopt an Agile Acquistion Policy for Software
+    - although specific to the DOD, this framework, it is distilled here:[Software Acquisition Pathway, using agile software acquisition processes](https://aaf.dau.edu/aaf/software/)
+  - Tirelessly Pursue Cyber Resilience
+    - Cyber Resilience is “the ability to anticipate, withstand, recover from, and adapt to adverse conditions, stresses, attacks, or compromises on the systems that include cyber resources.”12 A primary goal of DevSecOps adoption is to “bake-in” cyber resiliency into applications as part of the software factory’s DevSecOps pipeline process.
+  - Shift Test and Evaluation (T&E) Left into the Pipeline
+    - The value of shifting test and evaluation activities into the software factory’s pipeline is that risk is reduced by finding problems early and fixing them fast while the change that created the problem is still in the forefront of the developer’s mind. Integration continues to be difficult to achieve between disparate systems, and the push for access to raw data to feed AI/ML algorithms is increasing, not decreasing. The ability to ensure these integrations work earlier in the process, not as a bolt-on after-the-fact integration, drives the delivery of relevant software at the speed of operations. 
+
 NIST: [Engineering Trustworthy Secure Systems](https://csrc.nist.gov/publications/detail/sp/800-160/vol-1-rev-1/draft)
 
 [CI/CD The What, Why and How](https://resources.github.com/ci-cd/)
 Security is hard, [even for a multi-billion business like AWS](https://sprocketfox.io/xssfox/2021/02/18/pipeline/)
 
 
-Tools:
+# Tools:
 
-## Development Security ([forked from the toniblyx repo:](https://github.com/toniblyx/my-arsenal-of-aws-security-tools/blob/master/ami/README.md)
+## Development Security 
+([forked from the toniblyx repo:](https://github.com/toniblyx/my-arsenal-of-aws-security-tools/blob/master/ami/README.md))
 | Name | URL | Description | Popularity | Metadata |
 | ---------- | :---------- | :---------- | :----------: | :----------: |
 | **CFN NAG** | [https://github.com/stelligent/cfn_nag](https://github.com/stelligent/cfn_nag) |  CloudFormation security test (Ruby) |[![stars](https://badgen.net/github/stars/stelligent/cfn_nag)](https://badgen.net/github/stars/stelligent/cfn_nag)| [![contributors](https://badgen.net/github/contributors/stelligent/cfn_nag)](https://badgen.net/github/contributors/stelligent/cfn_nag)[![watchers](https://badgen.net/github/watchers/stelligent/cfn_nag)](https://badgen.net/github/watchers/stelligent/cfn_nag)[![last-commit](https://badgen.net/github/last-commit/stelligent/cfn_nag)](https://badgen.net/github/last-commit/stelligent/cfn_nag) [![open-issues](https://badgen.net/github/open-issues/stelligent/cfn_nag)](https://badgen.net/github/open-issues/stelligent/cfn_nag) [![closed-issues](https://badgen.net/github/closed-issues/stelligent/cfn_nag)](https://badgen.net/github/closed-issues/stelligent/cfn_nag) |
@@ -78,7 +135,7 @@ Tools:
 | **KICS** | [https://github.com/Checkmarx/kics](https://github.com/Checkmarx/kics) | Find security vulnerabilities, compliance issues, and infrastructure misconfigurations early in the development cycle of your infrastructure-as-code |[![stars](https://badgen.net/github/stars/Checkmarx/kics)](https://badgen.net/github/stars/Checkmarx/kics)| [![contributors](https://badgen.net/github/contributors/Checkmarx/kics)](https://badgen.net/github/contributors/Checkmarx/kics)[![watchers](https://badgen.net/github/watchers/Checkmarx/kics)](https://badgen.net/github/watchers/Checkmarx/kics)[![last-commit](https://badgen.net/github/last-commit/Checkmarx/kics)](https://badgen.net/github/last-commit/Checkmarx/kics) [![open-issues](https://badgen.net/github/open-issues/Checkmarx/kics)](https://badgen.net/github/open-issues/Checkmarx/kics) [![closed-issues](https://badgen.net/github/closed-issues/Checkmarx/kics)](https://badgen.net/github/closed-issues/Checkmarx/kics) |
 | **SecurityHub CIS Compliance Automator** | [https://github.com/NickTheSecurityDude/AWS-SecurityHub-CIS-Compliance-Automation](https://github.com/NickTheSecurityDude/AWS-SecurityHub-CIS-Compliance-Automation) | Automatically configure your AWS Account to meet 95% of the 200+ controls for CIS Compliance, PCI DSS Compliance and AWS Security Best Practice |[![stars](https://badgen.net/github/stars/NickTheSecurityDude/AWS-SecurityHub-CIS-Compliance-Automation)](https://badgen.net/github/stars/NickTheSecurityDude/AWS-SecurityHub-CIS-Compliance-Automation)| [![contributors](https://badgen.net/github/contributors/NickTheSecurityDude/AWS-SecurityHub-CIS-Compliance-Automation)](https://badgen.net/github/contributors/NickTheSecurityDude/AWS-SecurityHub-CIS-Compliance-Automation)[![watchers](https://badgen.net/github/watchers/NickTheSecurityDude/AWS-SecurityHub-CIS-Compliance-Automation)](https://badgen.net/github/watchers/NickTheSecurityDude/AWS-SecurityHub-CIS-Compliance-Automation)[![last-commit](https://badgen.net/github/last-commit/NickTheSecurityDude/AWS-SecurityHub-CIS-Compliance-Automation)](https://badgen.net/github/last-commit/NickTheSecurityDude/AWS-SecurityHub-CIS-Compliance-Automation) [![open-issues](https://badgen.net/github/open-issues/NickTheSecurityDude/AWS-SecurityHub-CIS-Compliance-Automation)](https://badgen.net/github/open-issues/NickTheSecurityDude/AWS-SecurityHub-CIS-Compliance-Automation) [![closed-issues](https://badgen.net/github/closed-issues/NickTheSecurityDude/AWS-SecurityHub-CIS-Compliance-Automation)](https://badgen.net/github/closed-issues/NickTheSecurityDude/AWS-SecurityHub-CIS-Compliance-Automation) |
 
-Additional Resources
+## Additional Resources
 
 - [Zero Trust](https://jefferywmoore.github.io/Zero-Trust-Resources/)
 - [AWS Cloud Architect](https://jefferywmoore.github.io/Cloud-Architect/)
