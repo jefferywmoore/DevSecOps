@@ -1,1 +1,15 @@
 theme: jekyll-theme-architect
+# global settings
+title: "Development Secure Operations"
+description: "Join with me to discover and harness ways and tools that allow building secure software, together"
+#permalink: "/stories/:title"
+#url: https://jefferywmoore.devsecops.github.com
+relative_permalinks: false
+
+sass:
+  style: :compressed
+  # Where you keep your scss files
+  sass_dir: assets/css/
+  # Where sass should look for other scss
+  #load_paths:
+  #  - node_modules/
