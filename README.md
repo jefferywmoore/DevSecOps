@@ -6,33 +6,36 @@ DevOps outlines a software development process and an organizational culture shi
 
 DevSecOps automatically bakes in security at every phase of the software development lifecycle, enabling development of secure software at the speed of Agile and DevOps. Addressing security issues as they emerge reduces cost (by catching problems before they are pushed into production), as well as the overall risk and attack surface) [IBM learn devsecops](https://www.ibm.com/cloud/learn/devsecops).
 
+Additional definitions:
+[https://snyk.io/series/devsecops/](https://snyk.io/series/devsecops/)
+[https://www.synopsys.com/glossary/what-is-devsecops.html](https://www.synopsys.com/glossary/what-is-devsecops.html)
 
 ## Articles/Publications:
 
 DOD: [DevSecOps Playbook](https://dodcio.defense.gov/Portals/0/Documents/Library/DevSecOps%20Playbook_DoD-CIO_20211019.pdf)
 Highlights:
   - Adopt a DevSecOps Culture:
-    - Stakeholder transparency and visibility.
-    - Complete transparency across team members in real-time.
+    - Stakeholder transparency and visibility
+    - Complete transparency across team members in real-time
     - All project resources easily accessible to the entire team; not everyone needs commit privileges (i.e. principle of least privelege)
-    - Adopt and embrace ChatOps as the communication backbone for the DevSecOps team.
+    - Adopt and embrace ChatOps as the communication backbone for the DevSecOps team
     - All technical staff should be concerned with, and have a say in, baked-in security
   - Adopt Infrastructure as Code (IaC):
-    - IT infrastructure supports and enables change, rather than being an obstacle or a constraint.
-    - Mitigates drift between environments by leveraging automation and push-button deployment.
-    - Enforces change management through GitOps with multiple approvers, as needed.
-    - Environmental changes are routine and fully automated, pivoting staff to focus on other tasks.
-    - Quicker recovery from failures, rather than assuming failure can be completely prevented.
-    - Empowers a continuous improvement ecosystem rather than “big bang” one and done activities.
-  - Adopt Containerized Microservices (this approach, in my opinion, should be [weighed according to benefits vs effort](https://www.amazon.com/Monolith-Microservices-Evolutionary-Patterns-Transform-ebook/dp/B081TKSSNN/)
-    - Componentization via services.
-    - Organized around business capabilities.
-    - Product over project.
-    - Smart endpoints, dumb pipes.
-    - Decentralized governance and data management.
-    - Infrastructure automation support via IaC.
-    - Design for failure.
-    - Evolutionary design support.
+    - IT infrastructure supports and enables change, rather than being an obstacle or a constraint
+    - Mitigates drift between environments by leveraging automation and push-button deployment
+    - Enforces change management through GitOps with multiple approvers, as needed
+    - Environmental changes are routine and fully automated, pivoting staff to focus on other tasks
+    - Quicker recovery from failures, rather than assuming failure can be completely prevented
+    - Empowers a continuous improvement ecosystem rather than “big bang” one and done activities
+  - Adopt Containerized Microservices (this approach, in my opinion, should be [weighed according to benefits vs effort](https://www.amazon.com/Monolith-Microservices-Evolutionary-Patterns-Transform-ebook/dp/B081TKSSNN/))
+    - Componentization via services
+    - Organized around business capabilities
+    - Product over project
+    - Smart endpoints, dumb pipes
+    - Decentralized governance and data management
+    - Infrastructure automation support via IaC
+    - Design for failure
+    - Evolutionary design support
   - Adopt a Capability Model, not a Maturity Model
     - | Metric | High Performers | Med. Performers | Low Performers|
       | ---------- | :---------- | :---------- | :----------: |
@@ -102,7 +105,7 @@ Security is hard, [even for a multi-billion business like AWS](https://sprocketf
 ## Development Security 
 ([forked from the toniblyx repo:](https://github.com/toniblyx/my-arsenal-of-aws-security-tools/blob/master/ami/README.md))
 | Name | URL | Description | Popularity | Metadata |
-| ---------- | :---------- | :---------- | :----------: | :----------: |
+| :---------- | :---------- | :---------- | :---------- | :----------: |
 | **CFN NAG** | [https://github.com/stelligent/cfn_nag](https://github.com/stelligent/cfn_nag) |  CloudFormation security test (Ruby) |[![stars](https://badgen.net/github/stars/stelligent/cfn_nag)](https://badgen.net/github/stars/stelligent/cfn_nag)| [![contributors](https://badgen.net/github/contributors/stelligent/cfn_nag)](https://badgen.net/github/contributors/stelligent/cfn_nag)[![watchers](https://badgen.net/github/watchers/stelligent/cfn_nag)](https://badgen.net/github/watchers/stelligent/cfn_nag)[![last-commit](https://badgen.net/github/last-commit/stelligent/cfn_nag)](https://badgen.net/github/last-commit/stelligent/cfn_nag) [![open-issues](https://badgen.net/github/open-issues/stelligent/cfn_nag)](https://badgen.net/github/open-issues/stelligent/cfn_nag) [![closed-issues](https://badgen.net/github/closed-issues/stelligent/cfn_nag)](https://badgen.net/github/closed-issues/stelligent/cfn_nag) |
 | **Git-secrets** | [https://github.com/awslabs/git-secrets](https://github.com/awslabs/git-secrets) |  |[![stars](https://badgen.net/github/stars/awslabs/git-secrets)](https://badgen.net/github/stars/awslabs/git-secrets)| [![contributors](https://badgen.net/github/contributors/awslabs/git-secrets)](https://badgen.net/github/contributors/awslabs/git-secrets)[![watchers](https://badgen.net/github/watchers/awslabs/git-secrets)](https://badgen.net/github/watchers/awslabs/git-secrets)[![last-commit](https://badgen.net/github/last-commit/awslabs/git-secrets)](https://badgen.net/github/last-commit/awslabs/git-secrets) [![open-issues](https://badgen.net/github/open-issues/awslabs/git-secrets)](https://badgen.net/github/open-issues/awslabs/git-secrets) [![closed-issues](https://badgen.net/github/closed-issues/awslabs/git-secrets)](https://badgen.net/github/closed-issues/awslabs/git-secrets) |
 | **Repository of sample Custom Rules for AWS Config** | [https://github.com/awslabs/aws-config-rules](https://github.com/awslabs/aws-config-rules) |  |[![stars](https://badgen.net/github/stars/awslabs/aws-config-rules)](https://badgen.net/github/stars/awslabs/aws-config-rules)| [![contributors](https://badgen.net/github/contributors/awslabs/aws-config-rules)](https://badgen.net/github/contributors/awslabs/aws-config-rules)[![watchers](https://badgen.net/github/watchers/awslabs/aws-config-rules)](https://badgen.net/github/watchers/awslabs/aws-config-rules)[![last-commit](https://badgen.net/github/last-commit/awslabs/aws-config-rules)](https://badgen.net/github/last-commit/awslabs/aws-config-rules) [![open-issues](https://badgen.net/github/open-issues/awslabs/aws-config-rules)](https://badgen.net/github/open-issues/awslabs/aws-config-rules) [![closed-issues](https://badgen.net/github/closed-issues/awslabs/aws-config-rules)](https://badgen.net/github/closed-issues/awslabs/aws-config-rules) |
