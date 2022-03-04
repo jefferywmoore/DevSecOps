@@ -7,8 +7,8 @@ DevOps outlines a software development process and an organizational culture shi
 DevSecOps automatically bakes in security at every phase of the software development lifecycle, enabling development of secure software at the speed of Agile and DevOps. Addressing security issues as they emerge reduces cost (by catching problems before they are pushed into production), as well as the overall risk and attack surface) [IBM learn devsecops](https://www.ibm.com/cloud/learn/devsecops).
 
 Additional definitions:
-[https://snyk.io/series/devsecops/](https://snyk.io/series/devsecops/)
-[https://www.synopsys.com/glossary/what-is-devsecops.html](https://www.synopsys.com/glossary/what-is-devsecops.html)
+- [https://snyk.io/series/devsecops/](https://snyk.io/series/devsecops/)
+- [https://www.synopsys.com/glossary/what-is-devsecops.html](https://www.synopsys.com/glossary/what-is-devsecops.html)
 
 ## Articles/Publications:
 
@@ -39,9 +39,9 @@ Highlights:
   - Adopt a Capability Model, not a Maturity Model
     - | Metric | High Performers | Med. Performers | Low Performers|
       | ---------- | :---------- | :---------- | :----------: |
-      | Deployment Freq. | On-Demand | >1xweek<1xmnth | >1xweek<1xmnth |
-      | Change lead time | < 1 hour | >1xweek<1xmnth | >1xweek<1xmnth | 
-      | MTTR | < 1 hour | < 1 day | >1xweek<1xmnth |
+      | Deployment Freq. | On-Demand | >1xWeek<1xMnth | >1xWeek<1xMnth |
+      | Change lead time | < 1 Hour | >1xWeek<1xMnth | >1xWeek<1xMnth | 
+      | MTTR | < 1 Hour | < 1 Day | >1xWeek<1xMnth |
       | Change failure rate | 0-15% | 0-15% | 31-45% |
   - Drive Continuous Improvement through Key Capabilities
     - Continuous Delivery
