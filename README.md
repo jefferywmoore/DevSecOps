@@ -141,7 +141,7 @@ Security is hard, [even for a multi-billion business like AWS](https://sprocketf
 ## Additional Resources
 
 - [Zero Trust](https://jefferywmoore.github.io/Zero-Trust-Resources/)
-- [AWS Cloud Architect](https://jefferywmoore.github.io/Cloud-Architect/)
+- 
 - Secure Development
 - The amazing [sottlmarek github DevSecOps repo](https://github.com/sottlmarek/DevSecOps)
 - [My Arsenal of AWS Security Tools](https://github.com/toniblyx/my-arsenal-of-aws-security-tools/blob/master/ami/README.md)
